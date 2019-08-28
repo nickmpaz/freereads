@@ -1,0 +1,2 @@
+curses
+python-dotenv

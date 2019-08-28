@@ -1,0 +1,9 @@
+__pycache__/*
+
+components/__pycache__/*
+
+utils/__pycache__/*
+
+books/*
+
+.env
