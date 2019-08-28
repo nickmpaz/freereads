@@ -7,11 +7,18 @@ from utils.gmail import *
 def main(stdscr):
     
     stdscr.refresh()
-    
-    search_bar = SearchBarComponent(3, 200, 0, 0)
-    scroll_page = ScrollPage(27, 200, 3, 0)
-    text_box = TextBox(12,200,30,0)
-    progress_bar = ProgressBarComponent(12,200,30,0)
+    curses.use_default_colors()
+
+
+    screen_width = curses.COLS
+    search_bar_height = 3
+    scroll_page_height = 27
+    text_box_height = progress_bar_height = 12
+
+    search_bar = SearchBarComponent(search_bar_height, screen_width, 0, 0)
+    scroll_page = ScrollPage(scroll_page_height, screen_width, search_bar_height, 0)
+    text_box = TextBox(text_box_height,screen_width,search_bar_height + scroll_page_height,0)
+    progress_bar = ProgressBarComponent(progress_bar_height, screen_width,search_bar_height + scroll_page_height,0)
     libgen = LibGen()
 
     
@@ -69,7 +76,7 @@ def main(stdscr):
 
             scroll_page.increment_focus()
 
-        else: 
+        elif len(ch) == 1: 
             search_bar.query += ch
     
 
