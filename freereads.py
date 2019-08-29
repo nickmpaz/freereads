@@ -36,7 +36,11 @@ def main(stdscr):
         if ch == '\n': 
 
             if scroll_page.focus == -1:
-                scroll_page.items = libgen.search(search_bar.query)
+
+                if len(search_bar.query) > 2:
+                    scroll_page.items = libgen.search(search_bar.query)
+                else:
+                    scroll_page.items = []
 
             else:
                 current_book = scroll_page.get_current_item()
