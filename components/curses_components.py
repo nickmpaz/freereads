@@ -77,6 +77,10 @@ class ScrollPageComponent(Component):
 
     def draw(self):
 
+        if len(self.items) == 0:
+            self.win.clear()
+            self.win.refresh()
+
         # all the items fit on the page
         if len(self.items) <= self.max_items_on_page: 
             start_item = 0
