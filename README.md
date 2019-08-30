@@ -30,15 +30,12 @@ Fill out the following information:
     SENDER_PASSWORD="your_gmail_password"
     RECEIVER_EMAIL="your_kindle_email_address"
 
-For a Gmail to be used, it must "allow less secure apps" (It may be smart
-to create a seperate Gmail account for this application). How to do this:
+For a Gmail account to be used by the application, it must "allow less secure apps" 
+(It may be smart to create a seperate Gmail account for this application). 
+How to do this: <https://devanswers.co/allow-less-secure-apps-access-gmail-account/>
 
-<https://devanswers.co/allow-less-secure-apps-access-gmail-account/>
-
-Whatever Gmail account is used must be added to your Amazon account as an 
-approved email. How to do this:
-
-<https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240>
+Whichever Gmail account you use, the account must be added to your Amazon account as an 
+approved email. How to do this: <https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240>
 
 
 ### Starting the application
