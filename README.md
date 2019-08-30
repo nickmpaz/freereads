@@ -1,6 +1,5 @@
 # Freereads
-![alt text](https://i.imgur.com/Q5GbFP2.mp4)
-
+<img src="https://i.imgur.com/Q5GbFP2.mp4" alt="JNote Demo" width="100%">
 ## About
 
 ## Usage
