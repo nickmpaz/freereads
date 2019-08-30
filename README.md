@@ -14,7 +14,7 @@ and BeautifulSoup4. Emailing is done through Gmail's smtp server.
 
 <img src="https://i.imgur.com/F5g0k4e.gif" alt="Freereads Demo" width="100%">
 
-## Installation
+## Using Freereads
 
 ### Download and setup
 
@@ -31,6 +31,8 @@ Fill out the following information:
     SENDER_EMAIL="your_gmail_address"
     SENDER_PASSWORD="your_gmail_password"
     RECEIVER_EMAIL="your_kindle_email_address"
+
+### Email configuration
 
 For a Gmail account to be used by the application, it must "allow less secure apps" 
 (It may be smart to create a seperate Gmail account for this application). 
