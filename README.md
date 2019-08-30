@@ -1,22 +1,47 @@
 # Freereads
-<img src="https://i.imgur.com/F5g0k4e.gif" alt="JNote Demo" width="100%">
-## About
 
-## Usage
+A terminal-based application that searches Library Genesis for e-books and 
+displays the results. The user can then download the book, and the application
+will send it directly to their Amazon Kindle.
 
-Download and setup
+Freereads is built with Python. The terminal display is handled with curses. 
+Interaction with Library Genesis and its mirror sites is done with Requests 
+and BeautifulSoup4. Emailing is done through Gmail's smtp server.
+
+## Demo
+
+<img src="https://i.imgur.com/F5g0k4e.gif" alt="Freereads Demo" width="100%">
+
+## Installation
+
+### Download and setup
+
+Run the following commands:
 
     $ git clone https://github.com/nickmpaz/freereads.git && cd freereads
     $ sudo pip3 install -r requirements.txt
     $ mv .env.example .env
 
-Edit the .env file
+### Edit the .env file
 
-    SENDER_EMAIL="your_email_address"
-    SENDER_PASSWORD="your_email_password"
+Fill out the following information:
+
+    SENDER_EMAIL="your_gmail_address"
+    SENDER_PASSWORD="your_gmail_password"
     RECEIVER_EMAIL="your_kindle_email_address"
 
-Start the application
+For a Gmail to be used, it must "allow less secure apps" (It may be smart
+to create a seperate Gmail account for this application). How to do this:
+
+    https://devanswers.co/allow-less-secure-apps-access-gmail-account/
+
+Whatever Gmail account is used must be added to your Amazon account as an 
+approved email. How to do this:
+
+    https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240
+
+
+### Starting the application
 
     $ python3 freereads.py
 
