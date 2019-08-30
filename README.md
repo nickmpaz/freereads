@@ -35,8 +35,7 @@ Fill out the following information:
 ### Email configuration
 
 For a Gmail account to be used by the application, it must "allow less secure apps" 
-(It may be smart to create a seperate Gmail account for this application). 
-How to do this: 
+(It may be smart to create a seperate Gmail account). How to do this: 
 
 - <https://devanswers.co/allow-less-secure-apps-access-gmail-account/>
 
