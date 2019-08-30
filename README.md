@@ -1,5 +1,7 @@
 # Freereads
 
+## About 
+
 A terminal-based application that searches Library Genesis for e-books and 
 displays the results. The user can then download the book, and the application
 will send it directly to their Amazon Kindle.
@@ -32,10 +34,14 @@ Fill out the following information:
 
 For a Gmail account to be used by the application, it must "allow less secure apps" 
 (It may be smart to create a seperate Gmail account for this application). 
-How to do this: <https://devanswers.co/allow-less-secure-apps-access-gmail-account/>
+How to do this: 
+
+    <https://devanswers.co/allow-less-secure-apps-access-gmail-account/>
 
 Whichever Gmail account you use, the account must be added to your Amazon account as an 
-approved email. How to do this: <https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240>
+approved email. How to do this: 
+
+    <https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240>
 
 
 ### Starting the application
