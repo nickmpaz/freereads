@@ -1,5 +1,5 @@
 # Freereads
-<img src="https://i.imgur.com/Q5GbFP2.mp4" alt="JNote Demo" width="100%">
+<img src="https://i.imgur.com/F5g0k4e.gif" alt="JNote Demo" width="100%">
 ## About
 
 ## Usage
