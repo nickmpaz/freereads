@@ -33,12 +33,12 @@ Fill out the following information:
 For a Gmail to be used, it must "allow less secure apps" (It may be smart
 to create a seperate Gmail account for this application). How to do this:
 
-    https://devanswers.co/allow-less-secure-apps-access-gmail-account/
+<https://devanswers.co/allow-less-secure-apps-access-gmail-account/>
 
 Whatever Gmail account is used must be added to your Amazon account as an 
 approved email. How to do this:
 
-    https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240
+<https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=201974240>
 
 
 ### Starting the application
