@@ -12,9 +12,9 @@ and BeautifulSoup4. Emailing is done through Gmail's smtp server.
 
 ## Demo
 
-<img src="https://i.imgur.com/F5g0k4e.gif" alt="Freereads Demo" width="100%">
+Downloading "Inferno" by Larry Niven, and sending it to an email.
 
-* Downloading "Inferno" by Larry Niven, and sending it to an email.
+<img src="https://i.imgur.com/F5g0k4e.gif" alt="Freereads Demo" width="100%">
 
 ## Using Freereads
 
