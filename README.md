@@ -51,3 +51,21 @@ approved email. How to do this:
 
     $ python3 freereads.py
 
+### Controls
+
+General Controls
+
+- ctrl-C: exit
+- up/ down: Change the selected search result. Moving above the first result will
+focus the search bar. The search bar is focused by default. When the search bar
+is focused simply type and press enter to perform a search.
+
+Search Bar is Focused
+
+- enter: perform search
+- delete: clear search bar
+
+Search Result is Focused
+
+- enter: download book and send it to Kindle
+
