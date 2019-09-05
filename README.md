@@ -69,3 +69,6 @@ Search Result is Focused
 
 - enter: download book and send it to Kindle
 
+## Known Issues
+
+- epub currently not supported (coming soon) 
