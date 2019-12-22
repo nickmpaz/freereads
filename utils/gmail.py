@@ -13,7 +13,7 @@ sender_email = os.environ["SENDER_EMAIL"]
 sender_password = os.environ["SENDER_PASSWORD"]
 receiver_email = os.environ["RECEIVER_EMAIL"]
 
-def send_email(filename, progress_bar=False):
+def send_email(filelocation, filename, progress_bar=False):
 
     if progress_bar:
         progress_bar.message = "creating email..."
@@ -31,7 +31,7 @@ def send_email(filename, progress_bar=False):
         progress_bar.progress = 0.33
         progress_bar.draw()
     
-    with open(filename, "rb") as attachment:
+    with open(filelocation, "rb") as attachment:
         part = MIMEBase("application", "octet-stream")
         part.set_payload(attachment.read())
 

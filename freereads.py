@@ -1,8 +1,11 @@
-import sys, curses, time
+import sys, curses, time, subprocess
 from components.freereads_components import *   
 from components.curses_components import *
 from utils.libgen import *  
 from utils.gmail import *
+
+COMPATIBLE_EXTENSIONS = ['mobi']
+DEFAULT_EXTENSION = 'mobi'
 
 def main(stdscr):
     
@@ -44,11 +47,9 @@ def main(stdscr):
 
             else:
                 current_book = scroll_page.get_current_item()
-                filename = (
-                    "books/" + 
-                    current_book['title'].replace(" ", "-") + 
-                    "." + current_book["extension"]
-                )
+                title = current_book['title'].replace(" ", "-")
+                extension = current_book["extension"]
+                filename = "books/%s.%s" % (title, extension)                    
 
                 text_box.win.clear()
                 text_box.win.refresh()
@@ -56,7 +57,16 @@ def main(stdscr):
                 libgen.download(current_book, filename, progress_bar)
                 time.sleep(1)
 
-                send_email(filename, progress_bar)
+                if extension not in COMPATIBLE_EXTENSIONS:
+
+                    extension = DEFAULT_EXTENSION
+                    new_filename ="books/%s.%s" % (title, extension)
+                    with open(os.devnull, 'w') as devnull:
+                        subprocess.call(["ebook-convert", filename, new_filename], stdout=devnull, stderr=devnull) 
+                        subprocess.call(["rm", filename], stdout=devnull, stderr=devnull)
+                    filename = new_filename
+
+                send_email(filename, title + "." + extension, progress_bar)
                 time.sleep(1)
 
                 curses.flushinp()
