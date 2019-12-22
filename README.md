@@ -26,6 +26,10 @@ Run the following commands:
     $ sudo pip3 install -r requirements.txt
     $ mv .env.example .env
 
+Install calibre - (Ex. Ubuntu):
+
+    $ sudo apt install calibre
+
 ### Edit the .env file
 
 Fill out the following information:
@@ -68,7 +72,3 @@ Search Bar is Focused
 Search Result is Focused
 
 - enter: download book and send it to Kindle
-
-## Known Issues
-
-- epub currently not supported (coming soon) 
